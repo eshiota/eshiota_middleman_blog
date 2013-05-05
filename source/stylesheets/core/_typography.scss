@@ -1,0 +1,100 @@
+/*******************************************************************************
+*
+*  Core » Typography
+*
+*  Contains all typographical elements styles.
+*
+*******************************************************************************/
+
+/* 16px / 16px - 100% */
+body {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: "proxima-nova", "Proxima Nova", sans-serif;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+abbr { text-transform: lowercase; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+dfn { font-style: italic; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol, dd {
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+}
+
+ol { list-style: inside decimal; }
+ul { list-style: inside disc; }
+
+ul ul,
+ul ol,
+ol ul,
+ol ol { margin-bottom: 0; }
+
+ul li,
+ol li { margin-bottom: 0.5em; }
+
+ul li li,
+ol li li { margin-bottom: 0; }
+
+p { margin-bottom: 1.5em; }
+
+blockquote {
+  margin-bottom: 1.5em;
+}
+
+
+/*********************************************************************
+*  =Headers
+*********************************************************************/
+
+h1 {
+  font-size: em(58px, $CONTEXT_FONT_SIZE);
+  font-weight: normal;
+  line-height: em(56px, 58px);
+  margin-bottom: em(32px, 58px);
+}
+
+h2 {
+  font-size: em(42px, $CONTEXT_FONT_SIZE);
+  font-weight: normal;
+  line-height: em(48px, 42px);
+  margin-bottom: em(24px, 42px);
+  padding-top: em(16px, 42px);
+  text-transform: lowercase;
+}
+
+h3 {
+  font-size: em(26px, $CONTEXT_FONT_SIZE);
+  font-weight: normal;
+  line-height: em(32px, 26px);
+  margin-bottom: em(24px, 26px);
+  padding-top: em(8px, 26px);
+}
+
+h4 {
+  font-size: 1em;
+  line-height: em(24px);
+  margin-bottom: em(24px);
+  padding-top: em(8px, 26px);
+}

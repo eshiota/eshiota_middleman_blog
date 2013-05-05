@@ -1,0 +1,184 @@
+/*******************************************************************************
+*
+*  Layout » Main
+*
+*  All base styles for the layout, including grid, are defined here.
+*
+*******************************************************************************/
+
+body {
+  background-color: $BACKGROUND_COLOR;
+}
+
+/*********************************************************************
+*  =Header
+*********************************************************************/
+
+.blog-header .logo {
+  font-size: 100%; // resets to context font size
+  width: em(233px);
+  height: em(48px);
+  margin-bottom: 1.5em;
+}
+
+.blog-header .logo img {
+  width: 100%;
+}
+
+.blog-header .intro {
+  font-size: em(14px);
+}
+
+/* ==Navigation
+**********************************************/
+.blog-header .nav {
+  @include column-count(2);
+  @include column-gap(1em);
+}
+
+.blog-header .nav li {
+  @include box-sizing(border-box);
+  font-size: em(14px);
+  text-transform: uppercase;
+  font-weight: 900;
+  position: relative;
+  padding-left: em(32px, 14px);
+  margin-bottom: em(16px, 14px);
+}
+
+.blog-header .nav li:before {
+  content: "";
+  display: block;
+  width: em(24px, 14px);
+  height: em(24px, 14px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.blog-header .nav .twitter:before {
+  background-image: inline-image("icon_twitter.svg");
+}
+
+.blog-header .nav .github:before {
+  background-image: inline-image("icon_github.svg");
+}
+
+.blog-header .nav .linkedin:before {
+  background-image: inline-image("icon_linkedin.svg");
+}
+
+.blog-header .nav .about:before {
+  background-image: inline-image("icon_shiota.svg");
+}
+
+.blog-header .nav .blog:before {
+  background-image: inline-image("icon_blog.svg");
+}
+
+.blog-header .nav .email:before {
+  background-image: inline-image("icon_email.svg");
+}
+
+/*********************************************************************
+*  =Content
+*********************************************************************/
+
+.blog-content :last-child {
+  margin-bottom: 0;
+}
+
+/*********************************************************************
+*  =Footer
+*********************************************************************/
+
+.blog-footer {
+  @include clearfix;
+  background: $LINK_COLOR;
+  color: $BACKGROUND_COLOR;
+  padding-top: em(48px);
+  position: relative;
+}
+
+.blog-footer a {
+  @include colorful-links($BACKGROUND_COLOR);
+}
+
+.footer-block {
+  @include box-sizing(border-box);
+  float: left;
+  width: 33%;
+  padding: 0 em(16px);
+}
+
+.footer-block-title {
+  padding-top: 0;
+  padding-left: em(32px);
+  text-transform: uppercase;
+  position: relative;
+  margin-left: em(-32px);
+}
+
+.footer-block-title:before {
+  content: "";
+  display: block;
+  width: em(24px);
+  height: em(24px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: -1px; // compensating the uppercasing
+}
+
+/* ==Feeds
+**********************************************/
+.feeds-block {
+  padding-left: 0;
+}
+
+.feeds-block .footer-block-title:before {
+  background-image: inline-image("icon_feeds.svg");
+}
+
+.feeds-block .feeds-list {
+  padding: 0;
+  margin: 0;
+  list-style: none outside;
+}
+
+/* ==Flickr
+**********************************************/
+.flickr-block .footer-block-title:before {
+  background-image: inline-image("icon_flickr.svg");
+}
+
+/* ==Instagram
+**********************************************/
+.instagram-block {
+  padding-right: 0;
+}
+
+.instagram-block .footer-block-title:before {
+  background-image: inline-image("icon_instagram.svg");
+}
+
+/* ==Colophon
+**********************************************/
+.blog-footer .colophon {
+  clear: both;
+  text-align: center;
+  font-style: italic;
+  font-size: em(12px);
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.blog-footer .colophon .footer-block-title {
+  display: none;
+}
