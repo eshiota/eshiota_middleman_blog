@@ -23,7 +23,7 @@
   <script src="//use.typekit.net/dfs1lbt.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 
-  <%#= partial "shared/tracking/ga_tracking_tag" %>
+  <%= javascript_include_tag "head" %>
 </head>
 
 <body>
@@ -107,7 +107,7 @@
 
   </footer>
 
-  <%#= partial "shared/tracking/ga_init_tag" %>
+  <%= javascript_include_tag "application" %>
 </body>
 
 </html>
