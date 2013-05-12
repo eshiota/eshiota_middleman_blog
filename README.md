@@ -1,4 +1,4 @@
-# oslobabygear.com
+# eshiota blog
 
 ## Deployment process
 
