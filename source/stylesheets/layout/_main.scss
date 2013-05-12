@@ -327,7 +327,7 @@ body {
   }
 
   .blog-content {
-    padding-top: 5.57256vh;
+    padding-top: em(48px, 18px);
     // One column, larger font on content form optimum CPL
     font-size: em(18px);
   }
@@ -360,6 +360,30 @@ body {
 @media (max-width: 720px) {
   .blog-content {
     font-size: em(15px);
+  }
+}
+
+@media (max-width: 680px) {
+  .footer-block {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: em(48px);
+  }
+
+  /* ends with the sticky footer
+  **********************************************/
+  .blog-main {
+    padding-bottom: 0;
+  }
+
+  .blog-footer {
+    margin-top: em(48px);
+    height: auto;
+  }
+
+  .blog-footer .colophon {
+    position: static;
   }
 }
 
