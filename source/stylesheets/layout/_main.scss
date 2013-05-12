@@ -215,16 +215,11 @@ body {
   list-style: none outside;
 }
 
-/* ==Flickr
-**********************************************/
-.flickr-block .footer-block-title:before {
-  background-image: inline-image("icon_flickr.svg");
-}
-
 /* ==Instagram
 **********************************************/
 .instagram-block {
   padding-right: 0;
+  width: 66.6%;
 }
 
 .instagram-block .footer-block-title:before {
