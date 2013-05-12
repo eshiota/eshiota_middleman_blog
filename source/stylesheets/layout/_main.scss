@@ -92,6 +92,8 @@ body {
   position: relative;
   padding-left: em(32px, 14px);
   margin-bottom: em(16px, 14px);
+
+  &:last-child { margin-bottom: 0; }
 }
 
 .blog-header .nav li:before {
@@ -103,7 +105,8 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
+  margin-top: em(-12px, 14px);
 }
 
 .blog-header .nav .twitter:before {
@@ -244,4 +247,145 @@ body {
 
 .blog-footer .colophon .footer-block-title {
   display: none;
+}
+
+/*********************************************************************
+*  =Media Queries
+*********************************************************************/
+
+@media (min-width: 1300px) {
+  // 16px = too many CPL
+  body {
+    font-size: 106.25%; // 17px
+  }
+}
+
+@media (min-width: 1600px) {
+  // 17px = too many CPL
+  body {
+    font-size: 112.5%; // 18px
+  }
+}
+
+@media (max-width: 1180px) {
+  // Article column is too narrow for a 16px font-size
+  body {
+    font-size: 93.75%; // 15px
+  }
+
+  // Header is too narrow for a two-column menu
+  .blog-header .nav {
+    @include column-count(1);
+    @include column-gap(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  // Reset to 16px
+  body {
+    font-size: 100%; // 16px
+    overflow: hidden;
+  }
+
+  .blog-header,
+  .blog-content {
+    float: none;
+    width: 100%;
+    padding-left: 14.589%;
+    padding-right: 14.589%;
+  }
+
+  .blog-header {
+    @include clearfix;
+    padding-top: 5.57256vh;
+    position: relative;
+  }
+
+  .blog-header .logo {
+    width: em(204px);
+    height: em(42px);
+    float: left;
+    margin-right: em(24px);
+    margin-top: em(4px);
+  }
+
+  .blog-header .intro {
+    color: adjust-color($TEXT_COLOR, $lightness: +20%);
+  }
+
+  .blog-header .nav {
+    @include column-count(auto);
+    @include column-gap(normal);
+    @include box-sizing(border-box);
+    @include single-transition(right, .25s, ease-out);
+    border-radius: 5px 0 0 5px;
+    position: absolute;
+    right: em(-86px);
+    top: 5.57256vh;
+    width: em(126px);
+    background: adjust-color(#fff, $lightness: -4%);
+    padding: em(10px);
+  }
+
+  .blog-header .nav:hover {
+    right: 0;
+  }
+
+  .blog-content {
+    padding-top: 5.57256vh;
+    // One column, larger font on content form optimum CPL
+    font-size: em(18px);
+  }
+}
+
+@media (max-width: 976px) {
+  .blog-header .logo {
+    width: em(165px);
+    height: em(34px);
+    margin-top: em(4px);
+  }
+
+  .blog-header .intro {
+    font-size: em(12px);
+  }
+}
+
+@media (max-width: 880px) {
+  .blog-content {
+    font-size: em(16px);
+  }
+}
+
+@media (max-width: 790px) {
+  .blog-header .logo {
+    float: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .blog-content {
+    font-size: em(15px);
+  }
+}
+
+@media (max-width: 640px) {
+  // Here I felt I had to change the first two headings, as they were too
+  // large, even using proportinal sizes.
+  h1 {
+    font-size: em(42px, $CONTEXT_FONT_SIZE);
+  }
+
+  h2 {
+    font-size: em(36px, $CONTEXT_FONT_SIZE);
+  }
+
+  .blog-content {
+    font-size: em(14px);
+  }
+}
+
+@media (max-width: 490px) {
+  .blog-content {
+    font-size: em(13px);
+  }
 }
