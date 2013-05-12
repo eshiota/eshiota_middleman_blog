@@ -4,15 +4,63 @@
 *
 *  All base styles for the layout, including grid, are defined here.
 *
+*  Quick proportions guide:
+*
+*    100%
+*    38.197%
+*    14.589%
+*     5.57256%
+*     2.128550743%
+*      .813042527%
+*
+*  Sticky footer guide:
+*
+*    http://www.cssstickyfooter.com/using-sticky-footer-code.html
+*
+*  Layout structure:
+*
+*    <div class="blog-wrapper">
+*      <div class="blog-main">
+*        <header class="blog-header">
+*          Logo and nav
+*        </header>
+*
+*        <div class="blog-content">
+*          Some article
+*        </div>
+*      </div>
+*
+*      <footer class="blog-footer">
+*      </footer>
+*    </div>
+*
 *******************************************************************************/
 
 body {
   background-color: $BACKGROUND_COLOR;
 }
 
+.blog-wrapper {
+  min-height: 100%;
+}
+
+.blog-main {
+  @include clearfix;
+  padding-bottom: 27em;
+}
+
 /*********************************************************************
 *  =Header
 *********************************************************************/
+
+.blog-header {
+  @include box-sizing(border-box);
+  width: 38.197%;
+  padding-top: 14.589vh;
+  padding-left: 14.589%;
+  padding-right: 5.57256%;
+  float: left;
+}
 
 .blog-header .logo {
   font-size: 100%; // resets to context font size
@@ -86,6 +134,15 @@ body {
 *  =Content
 *********************************************************************/
 
+.blog-content {
+  @include box-sizing(border-box);
+  width: 61.803%;
+  padding-top: 14.589vh;
+  padding-left: 5.57256%;
+  padding-right: 14.589%;
+  float: right;
+}
+
 .blog-content :last-child {
   margin-bottom: 0;
 }
@@ -96,10 +153,16 @@ body {
 
 .blog-footer {
   @include clearfix;
+  @include box-sizing(border-box);
+  width: 100%;
+  clear: both;
+  padding: em(48px) 14.589% 0;
+  position: relative;
+  margin-top: -24em;
+  height: 24em;
+  overflow: hidden;
   background: $LINK_COLOR;
   color: $BACKGROUND_COLOR;
-  padding-top: em(48px);
-  position: relative;
 }
 
 .blog-footer a {
