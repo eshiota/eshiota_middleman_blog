@@ -47,6 +47,8 @@
 #   end
 # end
 
+Time.zone = "Brasilia"
+
 set :css_dir, "stylesheets"
 
 set :js_dir, "javascripts"
@@ -72,3 +74,5 @@ activate :sync do |sync|
   sync.existing_remote_files = 'delete'
   sync.gzip_compression = true
 end
+
+activate :blog
