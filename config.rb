@@ -67,8 +67,8 @@ end
 # https://github.com/karlfreeman/middleman-sync
 activate :sync do |sync|
   sync.fog_provider = 'AWS'
-  sync.fog_directory = 'oslobabygear.com'
-  sync.fog_region = 'us-east-1'
+  sync.fog_directory = 'www.eshiota.com'
+  sync.fog_region = 'sa-east-1'
   sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
   sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
   sync.existing_remote_files = 'delete'
