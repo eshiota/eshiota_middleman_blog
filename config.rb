@@ -78,3 +78,5 @@ end
 activate :blog do |blog|
   blog.prefix = "blog"
 end
+
+page "/feed.xml", :layout => false
