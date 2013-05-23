@@ -47,12 +47,12 @@
           <h2 class="visuallyhidden">Navigation</h2>
 
           <ul>
-            <li class="about">
-              <a href="/about" title="Read more about me">About</a>
+            <li class="blog">
+              <a href="/" title="Read my posts">Blog</a>
             </li>
 
-            <li class="blog">
-              <a href="/blog" title="Read my articles">Blog</a>
+            <li class="about">
+              <a href="/about" title="Read more about me">About</a>
             </li>
 
             <li class="twitter">
@@ -72,6 +72,12 @@
             </li>
           </ul>
         </nav>
+
+        <% if is_blog_article? %>
+          <p class="return-posts-list">
+            <a href="/" title="Read my posts">Return to the posts list</a>
+          </p>
+        <% end %>
       </header>
 
       <section class="blog-content">

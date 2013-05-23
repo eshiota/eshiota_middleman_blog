@@ -75,4 +75,6 @@ activate :sync do |sync|
   sync.gzip_compression = true
 end
 
-activate :blog
+activate :blog do |blog|
+  blog.prefix = "blog"
+end

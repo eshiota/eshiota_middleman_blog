@@ -133,6 +133,18 @@ body {
   background-image: inline-image("icon_email.svg");
 }
 
+.return-posts-list {
+  text-align: right;
+  font-size: em(14px);
+  padding-top: em(36px, 14px);
+  text-transform: lowercase;
+
+  &:before {
+    content: "«";
+    color: $LINK_COLOR;
+  }
+}
+
 /*********************************************************************
 *  =Content
 *********************************************************************/
@@ -148,6 +160,28 @@ body {
 
 .blog-content :last-child {
   margin-bottom: 0;
+}
+
+/* ==Posts list
+**********************************************/
+.posts-list {
+  list-style: none outside;
+  margin: 0;
+}
+
+.posts-list-item {
+  position: relative;
+}
+
+.posts-list time {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.posts-list .post-link {
+  display: block;
+  padding-left: em(92px);
 }
 
 /*********************************************************************
@@ -309,21 +343,13 @@ body {
   }
 
   .blog-header .nav {
-    @include column-count(auto);
-    @include column-gap(normal);
-    @include box-sizing(border-box);
-    @include single-transition(right, .25s, ease-out);
-    border-radius: 5px 0 0 5px;
-    position: absolute;
-    right: em(-86px);
-    top: 5.57256vh;
-    width: em(126px);
-    background: adjust-color(#fff, $lightness: -4%);
-    padding: em(10px);
+    @include column-count(3);
+    font-size: em(14px);
+    margin-bottom: em(24px);
   }
 
-  .blog-header .nav:hover {
-    right: 0;
+  .return-posts-list {
+    padding-top: 0;
   }
 
   .blog-content {
@@ -354,6 +380,8 @@ body {
 @media (max-width: 790px) {
   .blog-header .logo {
     float: none;
+    width: em(204px);
+    height: em(42px);
   }
 }
 
@@ -401,10 +429,38 @@ body {
   .blog-content {
     font-size: em(14px);
   }
+
+  // Also, break the posts list with date in a separate line
+  .posts-list-item {
+    margin-bottom: em(4px);
+  }
+
+  .posts-list time {
+    position: static;
+    display: block;
+  }
+
+  .posts-list .post-link {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 490px) {
   .blog-content {
     font-size: em(13px);
+  }
+
+  // Two columns instead of three on nav
+  .blog-header .nav {
+    @include column-count(2);
+    font-size: em(16px);
+  }
+}
+
+@media (max-width: 400px) {
+  .blog-header,
+  .blog-content {
+    padding-left: 14.589%;
+    padding-right: 14.589%;
   }
 }
