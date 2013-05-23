@@ -237,6 +237,7 @@ body {
 **********************************************/
 .feeds-block {
   padding-left: 0;
+  margin-bottom: em(48px);
 }
 
 .feeds-block .footer-block-title:before {
@@ -247,6 +248,38 @@ body {
   padding: 0;
   margin: 0;
   list-style: none outside;
+}
+
+/* ==Tags
+**********************************************/
+
+.tags-block .tags-list {
+  padding: 0;
+  margin: 0;
+  list-style: none outside;
+  font-size: em(14px);
+}
+
+.tags-block .tag {
+  display: inline-block;
+  position: relative;
+  padding-right: em(12px);
+  margin-right: em(12px);
+
+  &:after {
+    content: ".";
+    opacity: .5;
+    position: absolute;
+    right: em(-2px);
+    top: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+    margin-right: 0;
+
+    &:after { display: none; }
+  }
 }
 
 /* ==Instagram
@@ -375,23 +408,7 @@ body {
   .blog-content {
     font-size: em(16px);
   }
-}
 
-@media (max-width: 790px) {
-  .blog-header .logo {
-    float: none;
-    width: em(204px);
-    height: em(42px);
-  }
-}
-
-@media (max-width: 720px) {
-  .blog-content {
-    font-size: em(15px);
-  }
-}
-
-@media (max-width: 680px) {
   .footer-block {
     float: none;
     width: 100%;
@@ -412,6 +429,20 @@ body {
 
   .blog-footer .colophon {
     position: static;
+  }
+}
+
+@media (max-width: 790px) {
+  .blog-header .logo {
+    float: none;
+    width: em(204px);
+    height: em(42px);
+  }
+}
+
+@media (max-width: 720px) {
+  .blog-content {
+    font-size: em(15px);
   }
 }
 

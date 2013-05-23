@@ -1,7 +1,7 @@
 ---
 title: Publicando seu blog usando Middleman e Amazon S3
 date: 2013-05-21 23:49 BRT
-tags:
+tags: tutorial, front-end, css, javascript
 ---
 
 <article>

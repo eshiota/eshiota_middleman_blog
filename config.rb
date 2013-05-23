@@ -77,6 +77,7 @@ end
 
 activate :blog do |blog|
   blog.prefix = "blog"
+  blog.tag_template = "tag.html"
 end
 
 page "/feed.xml", :layout => false
