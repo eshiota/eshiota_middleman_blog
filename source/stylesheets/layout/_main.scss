@@ -13,10 +13,6 @@
 *     2.128550743%
 *      .813042527%
 *
-*  Sticky footer guide:
-*
-*    http://www.cssstickyfooter.com/using-sticky-footer-code.html
-*
 *  Layout structure:
 *
 *    <div class="blog-wrapper">
@@ -46,7 +42,7 @@ body {
 
 .blog-main {
   @include clearfix;
-  padding-bottom: 27em;
+  padding-bottom: em(48px);
 }
 
 /*********************************************************************
@@ -195,8 +191,6 @@ body {
   clear: both;
   padding: em(48px) 14.589% 0;
   position: relative;
-  margin-top: -24em;
-  height: 24em;
   overflow: hidden;
   background: $LINK_COLOR;
   color: $BACKGROUND_COLOR;
@@ -211,6 +205,7 @@ body {
   float: left;
   width: 33%;
   padding: 0 em(24px);
+  margin-bottom: em(48px);
 }
 
 .footer-block-title {
@@ -301,10 +296,6 @@ body {
   font-style: italic;
   font-size: em(12px);
   margin: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .blog-footer .colophon .footer-block-title {
@@ -414,21 +405,6 @@ body {
     width: 100%;
     padding: 0;
     margin-bottom: em(48px);
-  }
-
-  /* ends with the sticky footer
-  **********************************************/
-  .blog-main {
-    padding-bottom: 0;
-  }
-
-  .blog-footer {
-    margin-top: em(48px);
-    height: auto;
-  }
-
-  .blog-footer .colophon {
-    position: static;
   }
 }
 
