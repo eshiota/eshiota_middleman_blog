@@ -29,7 +29,7 @@
   }
 }
 
-@media (min-width: 881px) {
+@media (min-width: 641px) {
   .photos-list .photo {
     &:nth-child(5n) {
       margin-right: 0;
@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 880px) {
+@media (min-width: 481px) and (max-width: 640px) {
   .photos-list .photo {
     width: 22.75%;
 
