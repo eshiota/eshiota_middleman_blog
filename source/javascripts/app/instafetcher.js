@@ -59,7 +59,7 @@
       ;
 
       for (var i = 0; i < limit; i++) {
-        item = template.replace("{{href}}", response.data[i].link);
+        item = template.replace("{{link}}", response.data[i].link);
         item = item.replace("{{src}}", response.data[i].images.thumbnail.url);
         item = item.replace("{{description}}", response.data[i].caption.text);
 
