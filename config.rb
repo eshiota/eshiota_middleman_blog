@@ -81,4 +81,6 @@ activate :blog do |blog|
   blog.layout = "blog_layout"
 end
 
+activate :directory_indexes
+
 page "/feed.xml", :layout => false
