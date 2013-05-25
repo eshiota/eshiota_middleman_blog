@@ -159,6 +159,14 @@ body {
   margin-bottom: 0;
 }
 
+.section-title {
+  font-size: em(42px, $CONTEXT_FONT_SIZE);
+  font-weight: normal;
+  line-height: em(48px, 42px);
+  padding-top: em(8px, 42px);
+  margin-bottom: em(24px, 42px);
+}
+
 /* ==Posts list
 **********************************************/
 .posts-list {
