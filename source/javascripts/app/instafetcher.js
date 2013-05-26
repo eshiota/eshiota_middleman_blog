@@ -50,8 +50,8 @@
     },
 
     renderPhotos : function (response, opts) {
-      var element  = document.querySelector(opts.element),
-          template = element.querySelector("[data-instagram-tmpl]").innerHTML,
+      var element  = $(opts.element),
+          template = $("[data-instagram-tmpl]", element).innerHTML,
           quantity = opts.quantity || 10,
           limit    = Math.min(quantity, response.data.length),
           html     = [],
