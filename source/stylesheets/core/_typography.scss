@@ -11,7 +11,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 100%;
-  line-height: 1.5;
+  line-height: 1.625;
   font-family: "proxima-nova", "Proxima Nova", sans-serif;
 }
 
@@ -39,7 +39,7 @@ sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
 ul, ol, dd {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.625em;
   margin-left: 1.5em;
 }
 
@@ -57,10 +57,14 @@ ol li { margin-bottom: 0.5em; }
 ul li li,
 ol li li { margin-bottom: 0; }
 
-p { margin-bottom: 1.5em; }
+p { margin-bottom: 1.625em; }
 
 blockquote {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.625em;
+}
+
+figure {
+  margin-bottom: 1.625em;
 }
 
 
