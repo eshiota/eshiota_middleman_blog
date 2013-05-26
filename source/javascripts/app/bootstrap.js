@@ -4,4 +4,8 @@
     user_id      : "896055",
     element      : "#instagram"
   });
+
+  FitVids({
+    element : "#blog-content"
+  });
 })();
