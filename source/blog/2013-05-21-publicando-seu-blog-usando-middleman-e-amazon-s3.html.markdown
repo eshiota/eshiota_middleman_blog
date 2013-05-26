@@ -1,10 +1,8 @@
 ---
 title: Publicando seu blog usando Middleman e Amazon S3
 date: 2013-05-21 23:49 BRT
-tags: tutorial, front-end, css, javascript
+tags: Tutorial, Front-end, CSS, JavaScript
 ---
-
-<h1>O título do meu post pode ser muito grande e ocupar várias linhas</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
