@@ -60,7 +60,11 @@ ol li li { margin-bottom: 0; }
 p { margin-bottom: 1.625em; }
 
 blockquote {
-  margin-bottom: 1.625em;
+  margin-bottom: em(26px, 24px);
+  padding: 0 5.57256%;
+  font-family: Georgia, serif;
+  font-size: em(24px);
+  font-style: italic;
 }
 
 figure {
