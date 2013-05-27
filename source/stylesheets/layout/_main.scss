@@ -468,14 +468,10 @@ body {
 }
 
 @media (max-width: 640px) {
-  // Here I felt I had to change the first two headings, as they were too
-  // large, even using proportinal sizes.
+  // Here I felt I had to change the first heading, as it's too
+  // large, even using proportional sizes.
   h1 {
     font-size: em(42px, $CONTEXT_FONT_SIZE);
-  }
-
-  h2 {
-    font-size: em(36px, $CONTEXT_FONT_SIZE);
   }
 
   .blog-content {

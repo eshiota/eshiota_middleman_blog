@@ -84,25 +84,25 @@ h1 {
 }
 
 h2 {
-  font-size: em(42px, $CONTEXT_FONT_SIZE);
+  font-size: em(34px, $CONTEXT_FONT_SIZE);
   font-weight: normal;
-  line-height: em(48px, 42px);
-  margin-bottom: em(24px, 42px);
-  padding-top: em(16px, 42px);
-  text-transform: lowercase;
+  line-height: em(34px, 34px);
+  margin-bottom: em(26px, 34px);
+  padding-top: em(16px, 34px);
 }
 
 h3 {
-  font-size: em(26px, $CONTEXT_FONT_SIZE);
+  font-size: em(22px);
+  line-height: em(26px, 22px);
+  margin-bottom: em(26px, 22px);
+  padding-top: em(8px, 22px);
+  text-transform: uppercase;
   font-weight: normal;
-  line-height: em(32px, 26px);
-  margin-bottom: em(24px, 26px);
-  padding-top: em(8px, 26px);
 }
 
 h4 {
   font-size: 1em;
-  line-height: em(24px);
-  margin-bottom: em(24px);
-  padding-top: em(8px, 26px);
+  line-height: em(26px);
+  margin-bottom: em(26px);
+  padding-top: em(8px);
 }
