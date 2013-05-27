@@ -32,12 +32,12 @@ module CustomHelpers
       return src
     end
 
-    "/blog/#{current_article.slug}/#{src}"
+    "/blog/#{current_article.date.strftime("%Y/%m/%d")}/#{current_article.slug}/#{src}"
   end
 
   def post_image_tag(opts)
     content_tag :figure, :class => "post-media" do
-      link_to opts[:full], :title => "View full sized image" do
+      link_to path_to_post_image(opts[:full]), :title => "View full sized image" do
         if opts[:responsive]
           picturefill_tag(opts)
         else
