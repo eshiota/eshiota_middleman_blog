@@ -1,7 +1,7 @@
 ---
 title: O primeiro dia das mães fora de casa, em casa
 date: 2012-05-13 04:01 BRT
-tags:
+tags: Life
 ---
 
 Este é o primeiro ano em que acordarei no quarto, e não irei pegar uma sacola escondida em meu guarda-roupa, enquanto o pai vai pegar o presente e flores que comprou para você. Quando entregar meu pacote, não estarei de pijamas, com cara de sono. Este é o primeiro ano que direi que passei o Dia das Mães na “casa dos meus pais”.
