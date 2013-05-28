@@ -79,6 +79,7 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.tag_template = "tag.html"
   blog.layout = "blog_layout"
+  blog.default_extension = ".markdown.erb"
 end
 
 activate :directory_indexes
