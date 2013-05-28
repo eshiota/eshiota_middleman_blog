@@ -1,0 +1,139 @@
+---
+title: User Experience&#58; desenvolvendo para usuários e não para máquinas
+date: 2011-04-07 11:58 BRT
+tags: User Experience
+---
+
+Escrever sobre User Experience (UX) hoje em dia necessita um certo cuidado. Recentemente, o termo, amplamente divulgado por <a href="http://en.wikipedia.org/wiki/Donald_Norman">Donald Norman</a>, ganhou uma série de valores, significados e práticas que pouco têm a ver com sua idéia inicial. Assim como “Programadores Jedi” ou “Code Ninjas”, a posição de “UX Designer” passou a exalar um glamour, a representar uma classe de profissional que faz milagres. Mas a verdade é que poucos sabem (ou se lembram) da verdadeira função da profissão.
+
+Vou me adiantar e ser bem direto: projetar User Experience é focar o projeto no usuário, e saber conciliar sua satisfação com os objetivos do produto.
+
+Essa descrição, embora pareça óbvia, é frequentemente ignorada. Muitos acabam misturando conceitos de User Experience com regras de negócio e requisitos do projeto. Outros pensam que UX Design é simplesmente desenhar flows, wireframes e realizar testes de usabilidade. Em muitos times, UX é considerado apenas como a “cereja do bolo”: um toque especial para deixar o projeto mais bonito, ou sanar falha de usabilidades gravíssimas.
+
+Para acabar com todos esses conceitos errôneos, o primeiro passo é definir qual o papel exato de cada área no processo de elaboração de uma interface; em seguida, compreender a importância da experiência do usuário nos projetos; e por último, aprender a desenvolver projetos centrados no usuário. Focarei no modelo de projetos para a web, sob o qual eu trabalho.
+
+## Entendendo quem projeta a interface
+
+Não existe definição certa e regulamentada para times quanto às interfaces de usuário (User Interfaces). Em muitos times, os desenvolvedores do sistema (desenvolvedores back-end) são também responsáveis por mexer com HTML e CSS; grande parte deles não possui profissionais dedicados à Arquitetura da Informação ou UX; e em quase todas as empresas, membros multi-disciplinares acabam envolvidos em diferentes áreas.
+
+Independente da divisão de tarefas, gosto de dividir o design de UI em quatro grandes áreas: Arquitetura da Informação (AI), Design Gráfico, Front-end e — foco deste artigo — User Experience (UX).
+
+### Arquitetura da Informação
+
+Os **arquitetos de informação** são responsáveis por organizar o conteúdo do produto e projetar suas funcionalidades de acordo com o perfil dos usuários, requisitos do projeto e valores de negócio. Eles estudam os comportamentos, as características e necessidades dos usuários; e determinam os caminhos que eles devem seguir, as ações que podem ser executadas, como a informação é classificada e categorizada, e como os dados são coletados e disponibilizados. O resultado disso são flows de navegação, wireframes, protótipos, documentação, palavras-chave, categorias e personas (perfis de potenciais usuários baseados nos valores de negócio). Esta área envolve disciplinas como comunicação, marketing, biblioteconomia, quality assurance e design.
+
+<%= post_image({
+      :src => "swat_blog.png",
+      :full => "swat_blog.png",
+      :alt => "Wireframe - SWAT Blog",
+      :caption => "Wireframe são artefatos de AI usados para organizar visualmente a informação."
+    })
+%>
+
+> <p style="text-align: center;">Comportamentos + Organização + Funcionalidade + Requisitos + Valores de negócio<br />
+> <strong>=</strong><br />
+> Flows + Wireframes + Protótipos + Documentação + Personas</p>
+
+### Design Gráfico
+
+Os **designers gráficos** são responsáveis por definir e propagar os valores e a missão do produto através de uma identidade visual consistente e uma direção de arte adequada. Eles também garantem a legibilidade da informação e complementam a experiência do usuário por meio de aspectos visuais (cores, texturas, proporções) agradáveis e coerentes. O resultado disso são layouts consistentes, compatíveis com o projeto, que auxiliam na leitura e compreensão das mensagens, e melhoram a experiência do usuário.
+
+<%= post_image({
+      :src => "swat_hq_homepage.jpg",
+      :full => "swat_hq_homepage.jpg",
+      :alt => "Layout - SWAT HQ",
+      :caption => "Layouts mostram com fidelidade o visual do site, com grid, tipografia, cores, estilos e imagens aplicados."
+    })
+%>
+
+> <p style="text-align: center;">Direção de arte + Identidade visual + Legibilidade + Ornamentos<br />
+> <strong>=</strong><br />
+> Layouts + Padrões visuais + Tipografia + Estética</p>
+
+### Front-end
+
+Os **desenvolvedores de front-end** são responsáveis por transformar os layouts e a experiência arquitetada em um código interpretável pelos navegadores. Eles reúnem todos os elementos de arquitetura da informação e transformam-nos em um documento com estrutra semântica; decompõem os layouts em atributos visuais e imagens; codificam os comportamentos da interface e otimizam a interpretação destes elementos pelo navegador. O resultado disso são documentos HTML semânticos, folhas de estilo (CSS) que representam o layout de maneira correta, código JavaScript que melhora a experiência do usuário, e o carregamento otimizado de páginas consumindo menos a conexão do usuário.
+
+<%= post_image({
+      :src => "swat_blog_css.png",
+      :full => "swat_blog_css.png",
+      :alt => "CSS - SWAT HQ",
+      :caption => "Desenvolvedores Front-end transformam layouts e interações em códigos HTML, CSS e JavaScript."
+    })
+%>
+
+> <p style="text-align: center;">Arquitetura da informação + Renderização + Interações + Otimizações<br />
+> <strong>=</strong><br />
+> HTML + CSS + JavaScript + Páginas rápidas</p>
+
+### User Experience
+
+Os **designers de User Experience** são responsáveis por entender os requistos do usuário, suas reais necessidades, expectativas e reações. Eles concentram esforços para proporcionar uma boa experiência, segurança nas ações, sentimentos de realização, e promover uma maior proximidade entre o produto e o usuário. O resultado disso são maior fidelidade, interações e navegação melhores, melhor comunicação, escolha correta de features e feedback a todas as áreas do projeto.
+
+A área de UX possui intersecções com todas as outras áreas, incluindo Arquitetura da Informação, Design Gráfico, Front-end, Back-end e Conteúdo. Desta forma, os designers de UX podem, através da visão de um usuário, proporcionar um feedback melhor para o resto do time quanto a performance, legibilidade, usabilidade, estética, organização e necessidades. O diagrama abaixo, produzido por <a href="http://www.kickerstudio.com/blog/2008/12/the-disciplines-of-user-experience/">Dan Saffer</a>, mostra a interdisciplinaridade das áreas e a abrangência da disciplina de UX.
+
+<%= post_image({
+      :src => "ux_disciplines.png",
+      :full => "ux_disciplines.png",
+      :alt => "Disciplinas de User Experience Design",
+      :caption => "A área de User Experience é uma combinação de diferentes disciplinas de projeto."
+    })
+%>
+
+> <p style="text-align: center;">Requisitos do usuário + Usabilidade + Psicologia + Emoção + Estratégia de conteúdo + Design + Arquitetura da Informação + Front-end + Funcionalidades<br />
+> <strong>=</strong><br />
+> Interações + Flows otimizados + Melhor comunicação + Feedback melhor</p>
+
+## Os usuários necessitam de amor
+
+No <a href="http://www.eshiota.com/2010/10/an-event-apart-2010-e-a-morte-da-web/">An Event Apart 2010</a>, <a href="http://aarronwalter.com/">Aarron Walter</a> dedicou sua palestra para falar sobre um único tema: “Aprendendo a amar humanos - Design de interfaces emocionais”. Nela, a mensagem é clara e precisa: mais que apenas sobreviver, os humanos necessitam de amor. Um projeto pode simplesmente atender às necessidades mais básicas de um usuário e cumprir sua função; ou pode ir muito além e tratá-lo de maneira privilegiada através de uma experiência cuidadosamente projetada, conquistando sua confiança, fidelidade e preferência.
+
+<%= post_image({
+      :src => "sardines_sushi.jpg",
+      :full => "sardines_sushi.jpg",
+      :alt => "Sardinhas enlatadas vs. Sushi",
+      :caption => "Sardinhas enlatadas vs. Sushi. Ambos são comida, ambos são peixe. Qual você prefere?"
+    })
+%>
+
+Quando eu digo “experiência cuidadosamente projetada”, não significa que alguns testes de usabilidade ou uma parede repleta de wireframes impressos resolva o problema. Significa incorporar sua experiência do usuário na missão do produto. Significa considerar a conquista que ele obtém em cada funcionalidade desenvolvida. Significa comunicar-se como humanos, e não como máquinas. Significa entender suas motivações, necessidades e reações. Significa incorporar Arte e psicologia no processo de concepção e desenvolvimento. Steve Jobs, no final do anúncio do iPad 2, deixou claro como isso é importante:
+
+> Está no DNA da Apple que **tecnologia não é o suficiente**.
+> É a **tecnologia casada com as Artes Liberais e as Ciências Humanas**.
+> (…) Nossos concorrentes estão olhando para isso como se fosse o próximo
+> mercado de PCs. Essa não é a maneira correta. Estes são dispositivos pos-PC
+> que precisam ser mais simples de usar do que um PC, mais intuitivos. (Steve Jobs)
+
+Não importa se o sistema possui testes cobrindo 100% do código, ou se a tecnologia utilizada nos servidores é de ponta, se no fim o usuário é frustrado por péssima usabilidade, mensagens incompreensíveis, ou se ele simplesmente não se sente confortável em usar o produto. E esse padrão é uma prática recorrente em projetos — muitos de altíssimo custo — nos quais há muito planejamento em termos de negócio e implementação, mas não há atenção ao usuário. Um sistema funcional atende apenas a base das necessidades de um ser humano:
+
+<%= post_image({
+      :src => "maslow_ux.png",
+      :full => "maslow_ux.png",
+      :alt => "Maslow e UX",
+      :caption => "Pirâmide de Maslow. À esquerda, as necessidades do ser humano; à direita, a área do projeto que cobre cada camada."
+    })
+%>
+
+Segundo <a href="http://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs">Maslow</a>, além de necessidades básicas e da segurança, o ser humano busca afeto, auto-estima e realização pessoal. Estes três últimos níveis são exatamente o foco do campo de UX: complementar a base da pirâmide — o sistema, as informações, as funcionalidades — com interações bem projetadas, mensagens amigáveis, com a humanização de um ambiente gerido por máquinas e códigos.
+
+Desenvolver um produto funcional sem se preocupar com a experiência do usuário é como ir a um restaurante com uma boa comida e péssimo atendimento: quando você é maltratado, simplesmente não sente mais vontade de voltar.
+
+### Detalhes que fazem a diferença
+
+Ryan Carson escreveu um artigo interessante no qual afirma que <a href="http://thinkvitamin.com/user-science/user-experience/walt-disney-was-the-first-ux-professional/">Walt Disney foi o primeiro profissional de UX</a>. Pelos relatos que ouço de quem já visitou os parques da Disney (eu não — ainda ;D) ou trabalhou lá, tal afirmação não poderia ser mais correta. A Disney World foi projetada e é administrada para ser um mundo perfeito. O tal “lugar mais feliz do mundo” que eles tanto divulgam não é clichê, é simplesmente a realidade. Cada mínimo detalhe é pensado e planejado com apenas um objetivo macro em mente: os visitantes devem ter a melhor experiência de suas vidas.
+
+E eles não conseguem isso apenas fazendo os brinquedos funcionarem, as filas andarem ou atendendo às normas internacionais de segurança. Estes pontos compõem apenas parte da base da pirâmide, e eles almejam sempre o topo. <a href="http://thinkvitamin.com/user-science/user-experience/walt-disney-was-the-first-ux-professional/#comment-138217743">Os parques e banheiros estão sempre limpos</a>. Os funcionários são sempre pacientes, solícitos e bem-humorados. As filas são <a href="http://www.nytimes.com/2010/12/28/business/media/28disney.html?_r=1">micro-gerenciadas</a> para serem curtas e não desgastarem. Há dois desfiles por dia, com fogos de artifício. Os funcionários do hotel dizem “Bem-vindo ao **lar**”. Todo dia. Para todos os visitantes.
+
+<%= post_image({
+      :src => "disney.jpg",
+      :full => "disney.jpg",
+      :alt => "Disney World",
+      :caption => "O lugar mais feliz — e mais centrado no usuário — do planeta."
+    })
+%>
+
+Se todos os sistemas se focassem em fazer da experiência do usuário algo mágico, haveria muito menos frustração e muito mais produtividade. E-mails de boas vindas, mensagens amigáveis, efeitos sutis, ornamentos gráficos, animações suaves, feedback instantâneo para as ações, são pequenos detalhes que não afetam a funcionalidade básica do sistema, mas podem ser a diferença entre “minhas férias foram legais” e “foram as melhores férias da minha vida”.
+
+Num próximo post, listarei técnicas e artefatos que auxiliam a incorporar a experiência do usuário no processo de desenvolvimento do projeto. Stay tuned!
+
+<p><small>Fontes das imagens: <a href="http://www.kickerstudio.com/blog/2008/12/the-disciplines-of-user-experience/">Dan Saffer</a>; <a href="http://revistadietaja.blog.uol.com.br/arch2009-06-21_2009-06-27.html#2009_06-26_19_12_23-134512243-0">Blog Revista Dieta Já</a>, <a href="http://japanesechefinscotland.blogspot.com/">Japanese Chef in Glasglow, Falkirk, Alloa, Stirling and Edinburgh of Scotland</a>; <a href="disney-world-games.com">Disney World Games</a></small></p>
