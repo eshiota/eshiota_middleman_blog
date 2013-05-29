@@ -63,16 +63,16 @@ configure :build do
   activate :gzip
 end
 
-# Deployment configuration for middleman-sync
-# https://github.com/karlfreeman/middleman-sync
-activate :sync do |sync|
-  sync.fog_provider = 'AWS'
-  sync.fog_directory = 'www.eshiota.com'
-  sync.fog_region = 'sa-east-1'
+# Deployment configuration for middleman-s3_sync
+# https://github.com/fredjean/middleman-s3_sync
+activate :s3_sync do |sync|
+  sync.bucket = 'www.eshiota.com'
+  sync.region = 'sa-east-1'
   sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
   sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
-  sync.existing_remote_files = 'delete'
-  sync.gzip_compression = true
+  sync.delete = true
+  sync.after_build = false
+  sync.prefer_gzip = true
 end
 
 activate :blog do |blog|
