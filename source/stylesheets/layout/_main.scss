@@ -197,6 +197,8 @@ body {
   border-bottom: 1px solid #999;
 }
 
+.post :last-child { margin-bottom: 0; }
+
 .post-media {
   text-align: center;
   padding: 0 5.57256%%;
