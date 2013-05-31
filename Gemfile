@@ -5,4 +5,5 @@ source 'http://rubygems.org'
 gem "middleman"
 gem "middleman-smusher"
 gem "middleman-s3_sync"
+gem "middleman-s3_redirect"
 gem "middleman-blog"
