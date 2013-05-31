@@ -17,7 +17,7 @@ end
 # Deployment configuration for middleman-s3_sync
 # https://github.com/fredjean/middleman-s3_sync
 activate :s3_sync do |sync|
-  sync.bucket = 'www.eshiota.com'
+  sync.bucket = 'eshiota.com'
   sync.region = 'sa-east-1'
   sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
   sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
@@ -29,7 +29,7 @@ end
 # Redirection rules on Amazon S3
 # https://github.com/fredjean/middleman-s3_redirect
 activate :s3_redirect do |config|
-  config.bucket                = 'www.eshiota.com'
+  config.bucket                = 'eshiota.com'
   config.region                = 'sa-east-1'
   config.aws_access_key_id     = ENV['AWS_ACCESS_KEY_ID']
   config.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
@@ -69,3 +69,5 @@ redirected_posts.each do |post|
   date = post[:date].split("-")
   redirect "/#{date[0]}/#{date[1]}/#{post[:slug]}", "/blog/#{date[0]}/#{date[1]}/#{date[2]}/#{post[:slug]}"
 end
+
+redirect "/blog", "http://www.eshiota.com"
