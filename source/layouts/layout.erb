@@ -28,6 +28,8 @@
 
   <link rel="alternate" type="application/rss+xml" title="eshiota.com &raquo; Feed" href="/feed.xml" />
 
+  <%= partial "shared/tracking/ga_tracking_tag" %>
+
   <script src="//use.typekit.net/dfs1lbt.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 
@@ -141,6 +143,8 @@
   </footer>
 
   <%= javascript_include_tag "application" %>
+
+  <%= partial "shared/tracking/ga_init_tag" %>
 </body>
 
 </html>
