@@ -420,6 +420,7 @@ body {
 
   .return-posts-list {
     padding-top: em(26px, 14px);
+    margin-bottom: 0;
   }
 
   .blog-content {
@@ -438,6 +439,7 @@ body {
 
   .blog-header .intro {
     font-size: em(12px);
+    margin-bottom: em(18px, 12px);
   }
 }
 
@@ -509,13 +511,23 @@ body {
     padding-top: em(26px);
   }
 
+  .blog-header .logo {
+    width: em(155px);
+    height: em(32px);
+  }
+
   // Two columns instead of three on nav
   .blog-header .nav {
-    @include column-count(2);
-    font-size: em(16px);
+    @include column-count(3);
+  }
+
+  .return-posts-list {
+    font-size: em(12px);
+    padding-top: em(14px, 12px);
   }
 
   .blog-content {
     font-size: em(13px);
+    padding-top: em(26px, 13px);
   }
 }
