@@ -22,7 +22,7 @@ activate :s3_sync do |sync|
   sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
   sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
   sync.delete = true
-  sync.after_build = false
+  sync.after_build = true
   sync.prefer_gzip = true
 end
 
@@ -33,7 +33,7 @@ activate :s3_redirect do |config|
   config.region                = 'sa-east-1'
   config.aws_access_key_id     = ENV['AWS_ACCESS_KEY_ID']
   config.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
-  config.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
+  config.after_build           = true
 end
 
 # Middleman blog extension
