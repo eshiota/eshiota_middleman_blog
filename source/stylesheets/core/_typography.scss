@@ -24,7 +24,10 @@ abbr { text-transform: lowercase; }
 
 abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
 
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+  font-size: em(14px);
+}
 
 dfn { font-style: italic; }
 ins { background-color: #ff9; color: #000; text-decoration: none; }
