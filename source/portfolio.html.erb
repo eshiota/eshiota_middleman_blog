@@ -1,0 +1,52 @@
+---
+title: Portfolio
+---
+
+<article class="portfolio">
+  <h1>Portfolio</h1>
+
+  <p>Here are the most notable and recent projects I've worked on,
+  my personal experiments, and my presentations.</p>
+
+  <% data.portfolio.sections.each do |section| %>
+    <section class="portfolio-block">
+      <h2><%= section.name %></h2>
+
+      <p><%= section.description %></p>
+
+      <div class="portfolio-list">
+        <% section.projects.each do |project| %>
+          <article class="portfolio-item">
+            <% if project.image %>
+              <figure class="portfolio-item-media">
+                <% if project.link %>
+                  <% link_to project.link, :title => "Go to the #{section.entity}'s page" do %>
+                    <%= image_tag "portfolio/#{project.image.url}", :alt => project.image.alt %>
+                  <% end %>
+                <% else %>
+                  <%= image_tag "portfolio/#{project.image.url}", :alt => project.image.alt %>
+                <% end %>
+              </figure>
+            <% end %>
+
+            <% if project.video %>
+              <figure class="portfolio-item-media">
+                <%= project.video %>
+              </figure>
+            <% end %>
+
+            <div class="portfolio-item-description">
+              <h3 class="portfolio-item-name"><%= project.name %></h3>
+
+              <%= project.description %>
+
+              <% if project.link %>
+                <p class="link"><%= link_to "View #{section.entity}", project.link, :title => "Go to the #{section.entity}'s page" %></p>
+              <% end %>
+            </div>
+          </article>
+        <% end %>
+      </div>
+    </section>
+  <% end %>
+</article>

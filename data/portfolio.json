@@ -1,0 +1,166 @@
+{
+  "sections" : [
+    {
+      "name" : "Professional",
+      "slug" : "professional",
+      "entity" : "project",
+      "description" : "Recent and notable public projects I've worked on.",
+      "projects" : [
+        {
+          "name" : "Baby.com.br",
+          "image" : {
+            "url" : "professional_baby_medium.jpg",
+            "alt" : "Baby.com.br screenshot"
+          },
+          "description" : "<p>Brazil's 2013 \"Best New Online Store\" by E-bit. Launched in February 2013, it features a clean look, semantic HTML5 markup, scalable and tested JavaScript with an in-house architecture using Jasmine and jQuery, and lean CSS.</p>",
+          "link" : "http://www.baby.com.br"
+        },
+        {
+          "name" : "php|architect, May 2012",
+          "image" : {
+            "url" : "professional_phparch0512_medium.jpg",
+            "alt" : "Cover screenshot"
+          },
+          "description" : "<p>Featured article on php|architect May 2012 issue: \"Developing Websites for Users, Not Machines\", showing that code is more than tests, standards and good practice. Code is also part of the User Experience.</p>",
+          "link" : "http://www.phparch.com/magazine/2012-2/may/"
+        },
+        {
+          "name" : "Agência Ginga Website",
+          "image" : {
+            "url" : "professional_ginga_medium.jpg",
+            "alt" : "Website screenshot"
+          },
+          "description" : "<p>The Agência Ginga's website uses Ruby on Rails, Backbone, CSS3 animations, and Responsive Web Design concepts to provide an engaging experience. It won the Mobile Site of the Day from FWA on April 2012.</p><p><small>After I left the project, some modifications were made and the transition around the 790px breakpoint is now broken. =(</small></p>",
+          "link" : "http://www.agenciaginga.com.br/#!/en/home"
+        },
+        {
+          "name" : "Abril Infotrends 2011 Webapp",
+          "video" : "<iframe width=\"560\" height=\"306\" src=\"//www.youtube.com/embed/5zEdEKxfNRU?rel=0&showinfo=0\" frameborder=\"0\" allowfullscreen=\"true\"></iframe>",
+          "description" : "<p>Webapp with the conference's schedule, information, and list of speakers. Uses jQuery Mobile, appcache, HiDPI images, loads the data from a remote XML, and implements the relationship between speakers and presentations.</p><p><a href=\"http://www.youtube.com/watch?v=5zEdEKxfNRU\">View demo video</a></p>"
+        }
+      ]
+    },
+
+    {
+      "name" : "Personal projects",
+      "slug" : "personal",
+      "entity" : "project",
+      "description" : "Personal part-time projects and experiments.",
+      "projects" : [
+        {
+          "name" : "eshiota.com",
+          "image" : {
+            "url" : "personal_blog_medium.jpg",
+            "alt" : "Project screen"
+          },
+          "description" : "<p>This blog! It uses Middleman and Compass, and has a golden-ratio-based, responsive design. Feel free to study its implementation.</p>",
+          "link" : "https://github.com/eshiota/eshiota_middleman_blog"
+        },
+        {
+          "name" : "JS Minesweeper",
+          "image" : {
+            "url" : "personal_minesweeper_medium.jpg",
+            "alt" : "Project screen"
+          },
+          "description" : "<p>HTML/CSS/JavaScript implementation of the Minesweeper game. Features an organized code, with separate modules for each concern.</p>",
+          "link" : "https://github.com/eshiota/minesweeper"
+        },
+        {
+          "name" : "Middleman Sushiplate",
+          "description" : "<p>A boilerplate theme for Middleman projects. It features a base layout, a SASS structure for modular components, jQuery, Picturefill tag helpers, and deployment configs to Amazon AWS S3.</p>",
+          "link" : "https://github.com/eshiota/middleman-sushiplate"
+        },
+        {
+          "name" : "Front-end Patterns",
+          "image" : {
+            "url" : "personal_patterns_medium.jpg",
+            "alt" : "Project screen"
+          },
+          "description" : "<p>Collection of some front-end tricks that I presented on a Devcast episode. It still needs some love and more additions. =/</p>",
+          "link" : "https://github.com/eshiota/frontend-patterns"
+        }
+      ]
+    },
+
+    {
+      "name" : "Presentations",
+      "slug" : "presentations",
+      "entity" : "presentation",
+      "description" : "Presentations and workshops I've presented on companies and events",
+      "projects" : [
+        {
+          "name" : "Modular and Event-driven JavaScript",
+          "image" : {
+            "url" : "presentation_modularjs_medium.jpg",
+            "alt" : "Presentation's first screen"
+          },
+          "description" : "<p>Presented on SampaJS 2013. Large applications must have a well-structured JavaScript in order to be maintainable and easily adapted. In this presentation, I showed how a modular and event-driven approach provides scalable, adaptable, independent and testable components.</p>",
+          "link" : "http://www.slideshare.net/eshiota/javascript-modular-e-eventdriven"
+        },
+        {
+          "name" : "Analyzing, Adapting, and Improving an E-commerce’s Information Architecture",
+          "image" : {
+            "url" : "presentation_babyux_medium.jpg",
+            "alt" : "Presentation's first screen"
+          },
+          "description" : "<p>Presented on Congresso E-Commerce Brasil 2013. In this talk, I showed how Baby.com.br implements the Information Architecture discipline in the development process.</p>",
+          "link" : "http://www.slideshare.net/eshiota/babycombr-analisando-adaptando-e-melhorando-a-arquitetura-da-informao-em-um-ecommerce"
+        },
+        {
+          "name" : "The Front-end Development Challenges on an E-commerce Platform",
+          "image" : {
+            "url" : "presentation_baby_medium.jpg",
+            "alt" : "Presentation's first screen"
+          },
+          "description" : "<p>Presented on OlhóSEO Florianópolis 2013, Front in Rio 2013, and Web Day 2013. In this talk, I shared the experience of being a front-end engineer on an e-commerce with millions of monthly visitors: how we work with large teams, sharing the knowledge, maintaining a standard, while developing modular and scalable components.</p>",
+          "link" : "http://www.slideshare.net/eshiota/desafios-do-desenvolvimento-de-frontend-em-um-ecommerce"
+        },
+        {
+          "name" : "Front-end Architecture on Large Scale Applications",
+          "image" : {
+            "url" : "presentation_architecture_medium.jpg",
+            "alt" : "Presentation's first screen"
+          },
+          "description" : "<p>Presented on TDC 2012, Tableless Conf 2012, and RubyConf Brazil 2012. In this presentation, I show the concepts behind a modular, scalable front-end architecture on the HTML, CSS, and JavaScript.</p>",
+          "link" : "http://www.slideshare.net/eshiota/arquitetura-de-frontend-em-aplicaes-de-larga-escala"
+        },
+        {
+          "name" : "Responsive Web Design and the Web Ubiquity",
+          "image" : {
+            "url" : "presentation_rwd_medium.jpg",
+            "alt" : "Presentation's first screen"
+          },
+          "description" : "<p>Presented on QCon 2012 and Dev in Sampa 2012. In this talk, I show why Responsive Web Design is the next step towards web ubiquity, and what are the technical requirements to make it happen.</p>",
+          "link" : "http://www.slideshare.net/eshiota/responsive-web-design-e-a-ubiquidade-da-web"
+        },
+        {
+          "name" : "User Experience for Developers",
+          "image" : {
+            "url" : "presentation_uxdev_medium.jpg",
+            "alt" : "Presentation's first screen"
+          },
+          "description" : "<p>Presented on Dev in Sampa 2011 and Dev in Vale 2011. In this talk, I show tips and strategies for developers so that we stop coding for machines, and start coding for humans. Tagline: \"The user is NOT stupid. You are the one who's too cocky. #thereISaidIt\".</p>",
+          "link" : "http://www.slideshare.net/eshiota/user-experience-para-developers-dev-in-sampa-2011"
+        },
+        {
+          "name" : "Sushi and Interfaces",
+          "image" : {
+            "url" : "presentation_sushi_medium.jpg",
+            "alt" : "Presentation's first screen"
+          },
+          "description" : "<p>Presented on <a href='http://www.pechakucha.org/'>PechaKucha Night</a> São Paulo, following the 20x20 format (20 slides with 20 seconds, automatically progresses). In this presentation, I compared my work (Design and UI development) with the work of an Itamae (japanese chef).</p>",
+          "link" : "http://www.slideshare.net/eshiota/sushi-e-interfaces-pechakucha-so-paulo-vol-8-inspire-japan"
+        },
+        {
+          "name" : "Design and Interface inside the Development World",
+          "image" : {
+            "url" : "presentation_designdevelopment_medium.jpg",
+            "alt" : "Presentation's first screen"
+          },
+          "description" : "<p>Presentation about how to integrate Design, Information Architecture, and UI development with the back-end development, through agile methodologies.</p><p>Presented on Dev in Sampa 2010, and companies having trouble with distributed and agile teams.</p>",
+          "link" : "http://www.slideshare.net/eshiota/o-design-e-a-interface-no-mundo-da-programao"
+        }
+      ]
+    }
+  ]
+}

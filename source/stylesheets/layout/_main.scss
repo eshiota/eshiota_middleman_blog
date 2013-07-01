@@ -130,6 +130,10 @@ body {
   background-image: inline-image("icon_email.svg");
 }
 
+.blog-header .nav .portfolio:before {
+  background-image: inline-image("icon_portfolio.svg");
+}
+
 .return-posts-list {
   text-align: right;
   font-size: em(14px);
@@ -224,6 +228,47 @@ body {
 **********************************************/
 .about strong {
   color: #ff7a4d;
+}
+
+/*********************************************************************
+*  =Portfolio
+*********************************************************************/
+
+.portfolio-block {
+  margin-bottom: em(48px);
+}
+
+.portfolio-item {
+  width: 45%;
+  margin-right: 5%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+  margin-bottom: em(24px);
+}
+
+.portfolio-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.portfolio-item-media {
+  margin-bottom: 0;
+}
+
+.portfolio-item-media img {
+  max-width: 100%;
+}
+
+.portfolio-item-description {
+  font-size: em(14px);
+  background: #fff;
+  padding: 1em;
+}
+
+.portfolio-item-description small {
+  font-style: italic;
+}
+
+.portfolio-item-name {
+  margin-bottom: em(16px, 20px);
 }
 
 /*********************************************************************
