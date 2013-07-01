@@ -238,6 +238,7 @@ body {
   margin-bottom: em(48px);
 }
 
+// Will be adjusted by Masonry
 .portfolio-item {
   width: 45%;
   margin-right: 5%;
@@ -574,5 +575,16 @@ body {
   .blog-content {
     font-size: em(13px);
     padding-top: em(26px, 13px);
+  }
+}
+
+@media (max-width: 390px) {
+  .portfolio-item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .portfolio-item-description {
+    font-size: em(16px);
   }
 }
